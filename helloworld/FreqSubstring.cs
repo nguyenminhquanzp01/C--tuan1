@@ -8,6 +8,7 @@ public class FreqSubstring
   public string FilePath { get; set; }
   public void doTask()
   {
+    Console.WriteLine("linear");
     try
     {
       using (StreamReader sr = new StreamReader(FilePath))
@@ -30,6 +31,7 @@ public class FreqSubstring
   }
   public void doTaskParallel()
   {
+    Console.WriteLine("parallel");
     try
     {
       var lines = File.ReadLines(FilePath);
@@ -49,6 +51,7 @@ public class FreqSubstring
   }
   public void doTaskChunk()
   {
+    Console.WriteLine("chunk");
     Parallel.ForEach(File.ReadLines(FilePath),
     new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount },
     () => new Dictionary<string, int>(), // dictionary cho mỗi thread

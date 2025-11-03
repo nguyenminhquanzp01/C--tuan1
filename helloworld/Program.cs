@@ -22,15 +22,18 @@ class Program
     //   new Student(6, "Nak", 713, "NYC"),
     // };
     // var res = from s in students orderby s.Mark ascending where s.StudentName.Contains("C") select s;
-    string path = @"C:\Users\quan\Downloads\HDFS_v3_TraceBench\preprocessed\normal_trace.csv";
+    string path = @"app.log";
     FreqSubstring f = new FreqSubstring() { FilePath = path };
     long fileSize = new System.IO.FileInfo(path).Length;
     Console.WriteLine("file: " + f.FilePath);
     Console.WriteLine("file size: " + fileSize / 1024d / 1024d);
     var watch = System.Diagnostics.Stopwatch.StartNew();
-
+    // f.doTask();
+    // f.doTaskParallel();
     // f.doTaskChunk();
-    await TaskAsyncIO.testAsync2();
+    TaskAsyncIO.testNonAsync();
+    // await TaskAsyncIO.testAsync();
+    // await TaskAsyncIO.testAsync2();
     watch.Stop();
 
     var elapsedMs = watch.ElapsedMilliseconds;

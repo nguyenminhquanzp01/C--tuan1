@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quan\\Desktop\\C##\\helloworld\\helloworld.csproj",
+      "projectUniqueName": "C:\\Users\\quan\\Desktop\\c#\\helloworld\\helloworld.csproj",
       "projectName": "helloworld",
-      "projectPath": "C:\\Users\\quan\\Desktop\\C##\\helloworld\\helloworld.csproj",
+      "projectPath": "C:\\Users\\quan\\Desktop\\c#\\helloworld\\helloworld.csproj",
       "packagesPath": "C:\\Users\\quan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quan\\Desktop\\C##\\helloworld\\obj\\",
+      "outputPath": "C:\\Users\\quan\\Desktop\\c#\\helloworld\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\quan\\AppData\\Roaming\\NuGet\\NuGet.Config"
